@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Swal from "sweetalert2"; // For sweet alert
+import Swal from "sweetalert2"; 
 import useAuth from "../Hooks/useAuth";
 import useAxiosPublic from "../Hooks/useAxiosPublic";
 
 const MyCollege = () => {
-  const { user } = useAuth(); // User data from context
+  const { user } = useAuth(); 
   const [admissionData, setAdmissionData] = useState([]);
   const [review, setReview] = useState({ content: "", rating: 0 });
   const axiossecure = useAxiosPublic();

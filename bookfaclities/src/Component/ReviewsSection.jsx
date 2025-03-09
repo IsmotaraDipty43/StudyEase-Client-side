@@ -6,7 +6,7 @@ const ReviewsSection = () => {
   const axiossecure = useAxiosPublic();
 
   useEffect(() => {
-    // Fetch reviews from API
+
     axiossecure
       .get("/allreview")
       .then((res) => {
@@ -17,7 +17,6 @@ const ReviewsSection = () => {
       });
   }, [axiossecure]);
 
-  // Array of background colors for the cards
   const cardColors = [
     "bg-blue-100", "bg-green-100", "bg-yellow-100", 
     "bg-red-100", "bg-purple-100"

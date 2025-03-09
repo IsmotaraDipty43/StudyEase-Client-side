@@ -1,6 +1,6 @@
 import React from 'react';
 
-// You can replace these image URLs with actual image links
+
 const images = [
   'https://t4.ftcdn.net/jpg/03/38/75/21/360_F_338752127_KeLWD80r6a6tNugFmVrvcma5zN5jdQBn.jpg',
   'https://img.freepik.com/premium-photo/group-students-attending-graduation-ceremony-nice-day_115086-774.jpg',

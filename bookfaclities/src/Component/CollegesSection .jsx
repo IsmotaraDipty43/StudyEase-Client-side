@@ -8,7 +8,7 @@ const CollegesSection = () => {
   
     useEffect(() => {
       axiossecure.get("/allcollage")
-        .then((res) => setColleges(res.data.slice(0, 3))) // Fetch first 3 colleges
+        .then((res) => setColleges(res.data.slice(0, 3))) 
         .catch((error) => console.error("Error fetching colleges:", error));
     }, [axiossecure]);
   

@@ -1,6 +1,6 @@
 import React from 'react';
 
-// Example research papers (you can replace these with actual links and titles)
+
 const researchPapers = [
   {
     title: 'Quantum Computing: An Introduction',

@@ -9,12 +9,12 @@ const CollegeList = () => {
 
   useEffect(() => {
     axiossecure
-      .get("/allcollage") // Fetch all colleges from backend
+      .get("/allcollage") 
       .then((res) => setColleges(res.data))
       .catch((error) => console.error("Error fetching colleges:", error));
   }, [axiossecure]);
 
-  // Filter colleges based on search query
+
   const filteredColleges = colleges.filter((college) =>
     college.collegeName.toLowerCase().includes(searchQuery.toLowerCase())
   );

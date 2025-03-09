@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 
-import Swal from "sweetalert2"; // ✅ Import SweetAlert
+import Swal from "sweetalert2"; 
 import useAuth from "../Hooks/useAuth";
 import useAxiosPublic from "../Hooks/useAxiosPublic";
 

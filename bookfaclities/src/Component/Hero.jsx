@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import heroImage from "../assets/her.png"; // Replace with your actual image path
+import heroImage from "../assets/her.png"; 
 
 const Hero = () => {
   return (
