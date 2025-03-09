@@ -2,13 +2,14 @@ import React, { useState, useEffect } from "react";
 import Swal from "sweetalert2"; 
 import useAuth from "../Hooks/useAuth";
 import useAxiosPublic from "../Hooks/useAxiosPublic";
-
+import Loading from '../Component/Loading'
 const MyCollege = () => {
   const { user } = useAuth(); 
   const [admissionData, setAdmissionData] = useState([]);
   const [review, setReview] = useState({ content: "", rating: 0 });
   const axiossecure = useAxiosPublic();
   const [reviews, setReviews] = useState([]); // State for storing reviews
+  const [loading, setLoading] = useState(true); // Loading state
 
   useEffect(() => {
     // Fetch admission data when the component mounts
@@ -22,6 +23,8 @@ const MyCollege = () => {
           title: "Oops...",
           text: "Failed to fetch admission data",
         });
+      } finally {
+        setLoading(false); // Set loading to false after data is fetched
       }
     };
 
@@ -49,9 +52,8 @@ const MyCollege = () => {
     e.preventDefault();
     try {
       const newReview = {
-       
-        userName: user.name,
-        userImage: user.imageUrl,
+        userName: user.displayName,  
+        userImage: user.photoURL,
         reviewContent: review.content,
         rating: review.rating,
         reviewDate: new Date().toLocaleDateString(),
@@ -79,7 +81,14 @@ const MyCollege = () => {
       });
     }
   };
-  
+
+  if (loading) {
+    return (
+      <div className="container mx-auto p-4 text-center">
+        <Loading></Loading>
+      </div>
+    );
+  }
 
   return (
     <div className="container mx-auto p-4">
