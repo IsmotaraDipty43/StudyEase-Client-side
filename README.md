@@ -1,7 +1,7 @@
-# Studyease
+# StudyEase
 
 ## Description
-**Studyease** is a user-friendly platform designed for students to easily access and book various college services and facilities. It offers a seamless experience for users to register, log in, and manage their profiles. The platform allows users to apply for specific universities or colleges, leave reviews, and stay updated with their personal information. The interface is designed to be fully responsive to cater to a variety of devices.
+**StudyEase** is a user-friendly platform designed for students to easily access and book various college services and facilities. It offers a seamless experience for users to register, log in, and manage their profiles. The platform allows users to apply for specific universities or colleges, leave reviews, and stay updated with their personal information. The interface is designed to be fully responsive to cater to a variety of devices.
 
 ### Features:
 - **Login & Signup**: Secure authentication with email/password and social login options (Google & GitHub).
@@ -19,7 +19,7 @@
 - **React.js**: For building the user interface with a component-based architecture.
 
 ## Live Demo
-Check out the live version of **Studyease** here: [Live Demo](https://collagebook-e5c29.web.app/)
+Check out the live version of **StudyEase** here: [Live Demo](https://collagebook-e5c29.web.app/)
 
 ## Technologies Used:
 - React.js
